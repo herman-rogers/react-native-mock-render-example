@@ -6,7 +6,25 @@
   "devDependencies": {
     "enzyme": "2.4.1",
     "jest": "^20.0.4",
+    "jsdom": "^11.0.0",
     "react": "15.4.1",
-    "react-native": "0.42.0"
+    "react-addons-test-utils": "^15.6.0",
+    "react-dom": "^15.6.1",
+    "react-native": "0.42.0",
+    "react-native-mock-render": "^0.0.6"
+  },
+  "scripts": {
+    "jest": "./node_modules/.bin/jest"
+  },
+  "preset": "react-native",
+  "jest": {
+    "globals": {
+      "__DEV__": true
+    },
+    "preset": "react-native",
+    "testRegex": "__tests__/.+\\.test.js$",
+    "setupFiles": [
+      "<rootDir>/jest/setup.js"
+    ]
   }
 }
