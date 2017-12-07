@@ -1,5 +1,6 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import { TextInput, View } from 'react-native';
+import PropTypes from 'prop-types';
 
 export default class Example extends Component {
   static propTypes = {

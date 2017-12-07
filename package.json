@@ -4,17 +4,17 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "enzyme": "2.4.1",
+    "enzyme": "3.2.0",
     "jest": "^20.0.4",
-    "jsdom": "^11.0.0",
-    "react": "15.4.1",
-    "react-addons-test-utils": "^15.6.0",
-    "react-dom": "^15.6.1",
-    "react-native": "0.42.0",
-    "react-native-mock-render": "^0.0.6"
+    "jsdom": "^11.5.1",
+    "react": "16.0.0",
+    "react-dom": "^16.0.0",
+    "react-native": "0.51.0",
+    "react-native-mock-render": "^0.0.19"
   },
   "scripts": {
-    "jest": "./node_modules/.bin/jest"
+    "jest": "./node_modules/.bin/jest",
+    "test:watch": "yarn jest -- --watch"
   },
   "preset": "react-native",
   "jest": {
@@ -26,5 +26,10 @@
     "setupFiles": [
       "<rootDir>/jest/setup.js"
     ]
+  },
+  "dependencies": {
+    "enzyme-adapter-react-16": "^1.1.0",
+    "prop-types": "^15.6.0",
+    "react-addons-test-utils": "^15.6.2"
   }
 }
