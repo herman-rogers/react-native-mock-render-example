@@ -14,7 +14,8 @@
   },
   "scripts": {
     "jest": "./node_modules/.bin/jest",
-    "test:watch": "yarn jest -- --watch"
+    "test": "yarn jest",
+    "test:watch": "test -- --watch"
   },
   "preset": "react-native",
   "jest": {
